@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Enoviq Technologies</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/enoviq_logo.png" alt="Logo" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-5 me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-font" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-font" href="#">Master Setup</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-font" href="#">Entity</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-font" href="#">Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-font" href="#">Expense</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-font" href="#">Search</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav me-5">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle navbar-font" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img src="./assets/profile.jpg" alt="Logo" height="30" width="30"
+                                class="profile-img d-inline-block align-text-top">
+                            Hi! Mr. Sobhen Sahoo
+                        </a>
+                        <ul class="dropdown-menu"></ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="main d-flex flex-column px-2 py-1">
+        <div class="top d-flex">
+            <div class="top-left d-flex flex-column w-50">
+                <div class="leave d-flex justify-content-between m-2">
+                    <div class="request d-flex flex-column align-items-center p-3">
+                        <span class="card-heading">Total Leave request!</span>
+                        <span class="card-number">0</span>
+                    </div>
+                    <div class="approved d-flex flex-column align-items-center p-3">
+                        <span class="card-heading">Total Leave approved!</span>
+                        <span class="card-number">0</span>
+                    </div>
+                    <div class="settled d-flex flex-column align-items-center p-3">
+                        <span class="card-heading">Total claim settled!</span>
+                        <span class="card-number">0</span>
+                    </div>
+                </div>
+                <div class="announcement d-flex flex-column my-2 p-2">
+                    <div class="ann-heading d-flex justify-content-center w-100">
+                        <span>IMPORTANT ANNOUNCEMENT</span>
+                    </div>
+                    <div class="d-flex flex-column align-items-start w-100 px-2">
+                        <span class="w-100 py-2">Test Announcement</span>
+                        <span class="w-100 py-2 span-border-blu">Test Announcement</span>
+                        <span class="w-100 py-2 span-border-blu">Test Announcement</span>
+                        <span class="w-100 py-2 span-border-blu">Test Announcement</span>
+                    </div>
+                </div>
+            </div>
+            <div class="top-right d-flex w-50">
+                <div class="attendance d-flex flex-column w-50 p-2 m-2">
+                    <div class="att-heading d-flex justify-content-center p-1">
+                        <span>Attendance</span>
+                    </div>
+                    <div class="att-content d-flex flex-column h-100 p-2">
+                        <div class="calendar d-flex justify-content-end">
+                            <span class="cal-btn p-1 my-2">Calendar View</span>
+                        </div>
+                        <form class="d-flex flex-column">
+                            <div class="check-in label-border py-2">
+                                <label>Check-In</label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="lunch-start label-border py-2">
+                                <label>Lunch Start</label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="lunch-end label-border py-2">
+                                <label>Lunch End</label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check-out label-border py-2">
+                                <label>Check-Out</label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="user-profile d-flex flex-column align-items-center w-50 p-4 m-2">
+                    <img src="./assets/profile.jpg" alt="" height="120" class="profile-img-big m-2">
+                    <div class="user-name my-2">
+                        <span>Mr. Sobhen Sahoo</span>
+                    </div>
+                    <div class="emp-code">
+                        <span>Employee Code: EN50077</span>
+                    </div>
+                    <div class="designation d-flex justify-content-center align-items-center pt-4 w-100 m-2">
+                        <span>Designation: S/w Developer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bot d-flex">
+            <div class="bot-left d-flex flex-column w-50 p-2 m-2">
+                <div class="anv-heading d-flex justify-content-center p-1">
+                    <span>JOINING ANNIVERSARY'S OF THE MONTH</span>
+                </div>
+                <div class="anv-content d-flex flex-column align-items-center p-2">
+                    <div class="anv-block d-flex flex-column align-items-center m-2 w-50">
+                        <div class="date">
+                            <span>'01-Dec'</span>
+                        </div>
+                        <div class="name">
+                            <span>'Saurabh Chavan'</span>
+                        </div>
+                    </div>
+                    <div class="anv-block d-flex flex-column align-items-center m-2 w-50">
+                        <div class="date">
+                            <span>'07-Dec'</span>
+                        </div>
+                        <div class="name">
+                            <span>'Sunny Kadam'</span>
+                        </div>
+                    </div>
+                    <div class="anv-block d-flex flex-column align-items-center m-2 w-50">
+                        <div class="date">
+                            <span>'12-Dec'</span>
+                        </div>
+                        <div class="name">
+                            <span>'Siddhesh Dhuri'</span>
+                        </div>
+                    </div>
+                    <div class="anv-block d-flex flex-column align-items-center m-2 w-50">
+                        <div class="date">
+                            <span>'12-Dec'</span>
+                        </div>
+                        <div class="name">
+                            <span>'Akhilesh Jambhale'</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bot-right d-flex flex-column w-50 p-2 m-2">
+                <div class="bday-heading d-flex justify-content-center p-1">
+                    <span>BIRTHDAY'S OF THE MONTH</span>
+                </div>
+                <div class="bday-content d-flex flex-column align-items-center p-2">
+                    <div class="bday-block d-flex flex-column align-items-center m-2 w-50">
+                        <div class="name">
+                            <span>'Tushar Vispute'</span>
+                        </div>
+                        <div class="date">
+                            <span>'05-Dec'</span>
+                        </div>
+                    </div>
+                    <div class="bday-block d-flex flex-column align-items-center m-2 w-50">
+                        <div class="name">
+                            <span>'Nabil Shaikh'</span>
+                        </div>
+                        <div class="date">
+                            <span>'06-Dec'</span>
+                        </div>
+                    </div>
+                    <div class="bday-block d-flex flex-column align-items-center m-2 w-50">
+                        <div class="name">
+                            <span>'Satyam Nigam'</span>
+                        </div>
+                        <div class="date">
+                            <span>'10-Dec'</span>
+                        </div>
+                    </div>
+                    <div class="bday-block d-flex flex-column align-items-center m-2 w-50">
+                        <div class="name">
+                            <span>'Amar Bawaskar'</span>
+                        </div>
+                        <div class="date">
+                            <span>'11-Dec'</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="d-flex justify-content-end w-100">
+        <span class="mx-5 my-3">All Rights Reserved Powered by: <a href="#">&#169; Enoviq</a></span>
+    </footer>
+</body>
+
+</html>
